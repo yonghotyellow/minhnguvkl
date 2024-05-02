@@ -1,0 +1,12 @@
+#upload-form {
+    display: block; /* Show the form initially */
+  }
+  
+  #upload-response {
+    display: none; /* Hide the information initially */
+  }
+  
+  #upload-form.hidden {
+    display: none; /* Hide the form after upload */
+  }
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Upload Form</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <script src="../app.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+  <h1>Video Upload</h1>
+  <form action="/upload" method="POST">
+    <label for="videoName">Video Name:</label>
+    <input type="text" id="videoName" name="videoName" required><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+
+    <label for="tags">Tags (separated by commas):</label><br>
+    <input type="text" id="tags" name="tags" required><br>
+
+    <label for="driveLink">Drive Link:</label>
+    <input type="text" id="driveLink" name="driveLink" required><br>
+
+    <input type="submit" id="uploadButton" value="Upload">
+    <script>
+
+      document.getElementById('uploadButton').addEventListener('click', function (event) {
+        console.log("auth");
+        //event.preventDefault(); // Prevent default form submission
+        //authenticateUser(req,res); // Assuming you have access to the res object here (passed from the server)
+      });
+    </script>
+  </form>
+
+</body>
+
+</html>
